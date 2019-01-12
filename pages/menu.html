@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sunda?</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/less" media="screen" href="../assets/css/main.less" />
+    <link rel="stylesheet" type="text/less" media="screen" href="../assets/css/float.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="manifest" href="../manifest.json">
+    <script src="../assets/js/less.min.js"></script>
+
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #5b5e65;
+        }
+        .preloader .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font: 14px arial;
+        }
+
+        .pure-material-button-contained {
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            text-decoration-style: none;
+            border: none;
+            border-radius: 4px;
+            padding: 0 16px;
+            min-width: 64px;
+            height: 36px;
+            vertical-align: middle;
+            text-align: center;
+            text-overflow: ellipsis;
+            text-transform: uppercase;
+            color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+            background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+            box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+            font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 36px;
+            overflow: hidden;
+            outline: none;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+
+        .pure-material-button-contained::-moz-focus-inner {
+            border: none;
+        }
+
+        .pure-material-button-contained::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .pure-material-button-contained::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            padding: 50%;
+            width: 32px;
+            height: 32px;
+            background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1);
+            transition: opacity 1s, transform 0.5s;
+        }
+
+        .pure-material-button-contained:hover,
+        .pure-material-button-contained:focus {
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);text-decoration: none;
+        }
+
+        .pure-material-button-contained:hover::before {
+            opacity: 0.08;
+        }
+
+        .pure-material-button-contained:focus::before {
+            opacity: 0.24;
+        }
+
+        .pure-material-button-contained:hover:focus::before {
+            opacity: 0.3;
+        }
+
+        .pure-material-button-contained:active {
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .pure-material-button-contained:active::after {
+            opacity: 0.32;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0s;
+        }
+
+        .pure-material-button-contained:disabled {
+            color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+            background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+            box-shadow: none;
+            cursor: initial;
+        }
+
+        .pure-material-button-contained:disabled::before {
+            opacity: 0;
+        }
+
+        .pure-material-button-contained:disabled::after {
+            opacity: 0;
+        }
+
+        .floating-container{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Sunda?</h1>
+    </div>
+    <div>
+        <article>
+            <h2>Kesenian</h2>
+            <div>
+                <h3 class="box-trans">Kesenian apa saja yang ada disunda?</h3>
+                <div class="gallery">
+                    <div class="inner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <br>
+                <center><a class="pure-material-button-contained" href="kesenian.html">Selengkapnya</a></center>
+            </div>
+        </article>
+        <article>
+            <h2>Bahasa</h2>
+            <div>
+                <h3 class="box-trans">Bagaimana bahasa yang digunakan oleh orang sunda?</h3>
+                <p class="box-trans">Dalam percakapan sehari-hari, etnis Sunda banyak menggunakan bahasa Sunda. Namun
+                    kini telah banyak masyarakat Sunda terutama yang tinggal di perkotaan tidak lagi menggunakan bahasa
+                    Sunda dalam bertutur kata.[5] Seperti yang terjadi di pusat-pusat keramaian kota Bandung, Bogor,
+                    dan Tangerang, dimana banyak masyarakat yang tidak lagi menggunakan bahasa Sunda.</p>
+
+                <br>
+                <center><a class="pure-material-button-contained" href="bahasa.html">Lihat bahasa sunda</a></center>
+            </div>
+        </article>
+        <article>
+            <h2></h2>
+            <div>
+                <h3 class="box-trans">Apa sih sunda itu?</h3>
+                <div class="box-trans">
+                    <p>Suku Sunda (Urang Sunda) adalah kelompok etnis yang berasal dari bagian barat pulau Jawa,
+                        Indonesia, dengan istilah Tatar Pasundan yang mencakup wilayah administrasi provinsi Jawa
+                        Barat, Banten, Jakarta, Lampung dan wilayah barat Jawa Tengah (Banyumasan). Orang Sunda
+                        tersebar diberbagai wilayah Indonesia, dengan provinsi Banten dan Jawa Barat sebagai wilayah
+                        utamanya.</p>
+                </div>
+                <br>
+                <center><a class="pure-material-button-contained" href="sunda.html">Selengkapnya</a></center>
+
+            </div>
+        </article>
+        <article>
+            <h2>Tokoh</h2>
+            <div>
+                <h3 class="box-trans">Siapa saja tokoh yang berasal dari sunda?</h3>
+                <center><img width="30%" src="../assets/images/tokoh/mustapa.jpg"></center>
+                <br>
+                <center><a class="pure-material-button-contained" href="tokoh.html">Selengkapnya</a></center>
+            </div>
+        </article>
+        <article>
+            <h2>Tulisan</h2>
+            <div>
+                <h3 class="box-trans">Seperti apa tulisan aksara sunda?</h3>
+                <p class="box-trans">Aksara Sunda Baku merupakan sistem penulisan hasil penyesuaian Aksara Sunda Kuno
+                    yang digunakan untuk menuliskan Bahasa Sunda kontemporer. Saat ini Aksara Sunda Baku juga lazim
+                    disebut dengan istilah Aksara Sunda.</p>
+                <br>
+                <center><a class="pure-material-button-contained" href="tulisan.html">Selengkapnya</a></center>
+            </div>
+        </article>
+    </div>
+
+    <form action="../index.html">
+        <div class="floating-container">
+            <button type="submit" class="floating-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        </div>
+    </form>
+
+    <div class="preloader">
+        <div class="loading">
+            <img src="../assets/images/load.gif" width="80">
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".preloader").delay(500).fadeOut();
+        })
+    </script>
+</body>
+
+</html>

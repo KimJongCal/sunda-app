@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sunda?</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="assets/images/load.gif" width="80">
+        </div>
+    </div>
+
+    <h1>Selamat <strong>Datang</strong></h1>
+
+    <form action="pages/menu.html">
+        <div class="panel pink">
+            <button type="submit">Cari Tahu Sunda Sekarang!</button>
+        </div>
+    </form>
+
+    <input type="checkbox" id="nav_switch" />
+    <div id="fullscreen_nav" class="full-screen-navigation">
+        <label for="nav_switch" class="cross-bars-whatever"></label>
+        <ul class="navigation-container">
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="pages/about.html">TENTANG</a></li>
+        </ul>
+    </div>
+    <label for="nav_switch" class="three-bars-whatever"></label>
+
+    <div class="footer">Copyright &copy; 2019 Ruang Dimensi X - All right reserved.</div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".preloader").delay(500).fadeOut();
+        })
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('assets/js/serviceworker.js')
+                    .then(reg => console.log('SW terdaftar', reg))
+                    .catch(err => console.log('SW Gagal: ', err));
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Dosis:200,400,600);
+
+body {
+  overflow: hidden;
+  background: #333;
+  margin: 0px;
+  font-family: Dosis;
+  padding: 0px;
+}
+
+.sejarah {
+  background-image: url('../images/wall/KampungCikondang-blur.jpg');
+  width: 100%;
+  height: 300px;
+  font-family: 'Lato';
+  color: rgba(231, 222, 222, 0.5);
+}
+
+.etimologi {
+  background-image: url('../images/wall/kudalumping-blur.jpg');
+  width: 100%;
+  height: 300px;
+}
+
+.pandangan {
+  background-image: url('../images/wall/warga-blur.jpg');
+  width: 100%;
+  height: 300px;
+}
+
+.kekerabatan {
+  background-image: url('../images/wall/angklung-blur.jpg');
+  width: 100%;
+  height: 300px;
+}
+
+#menu {
+  position: fixed;
+  left: 30px;
+  top: 30%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu li {
+  color: #fff;
+}
+
+#menu li button {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 0px;
+}
+
+#menu li button:hover {
+  width: 50px;
+  height: 50px;
+  background: #555;
+  border: 0px;
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: 30px auto;
+}
+
+.content-columns {
+  list-style: none;
+
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+}
+
+.boxed {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+.boxed img {
+  width: 100%;
+}
+
+.boxed .description {
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.boxed .description h1 {
+  font-size: 16px;
+}
+
+.boxed .description p {
+  font-size: 14px;
+  line-height: 21px;
+}

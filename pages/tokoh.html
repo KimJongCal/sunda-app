@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tokoh | Sunda?</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/tokoh.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/float.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/font-awesome/css/font-awesome.min.css" />
+
+    <style>
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: #5b5e65;
+        }
+
+        .preloader .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font: 14px arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>&nbsp;</h1>
+    <div class="site__wrapper">
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/doel.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--blue">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalDoel" class="card__title">Doel Sumbang</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/sri.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalSri" class="card__title">Sri Baduga Maharaja</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/oto.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalOto" class="card__title">Oto Iskandar di Nata</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/mustapa.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalMustapa" class="card__title">P.H.H.MUSTAPA</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/musa.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--blue">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalMusa" class="card__title">MUH.MUSA</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/dk.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--blue">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalDK" class="card__title">D.K.ARDIWINATA</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/yuhana.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalYuhana" class="card__title">YUHANA</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/soewanda.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--blue">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalSoewanda" class="card__title">G.SOEWANDAKOESOEMAH</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/tini.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalTini" class="card__title">TINI KARTINI</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card__image">
+                    <img src="../assets/images/tokoh/kis.jpg" alt="">
+
+                    <div class="card__overlay card__overlay--indigo">
+                        <div class="card__overlay-content">
+
+                            <a href="#modalKis" class="card__title">KIS WS</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="menu.html">
+        <div class="floating-container">
+            <button type="submit" class="floating-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        </div>
+    </form>
+
+    <div id="modalDoel" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Doel Sumbang</h2>
+            <img src="../assets/images/tokoh/doel.jpg">
+            <p>Abdul Wahyu Affandi[1] atau lebih dikenal dengan Doel Sumbang (lahir di Bandung, Jawa Barat, 16 Mei
+                1963; umur 55 tahun) adalah seorang musisi asal Jawa Barat. Ia mengawali karier di dunia teater pada "
+                Teater Braga ". Dan banyak belajar juga dari Remy Sylado yang tak lain.adalah pimpinan Dapur Teater
+                23761, Dari sanalah ia mendapatkan nama julukan "Doel" , nama "Sumbang" dikaitkan dengan lagu-lagunya
+                yang nyeleneh, vulgar, dan tengil. Ia meraih kesuksesan lewat duetnya dengan Nini Carlina lewat lagu
+                Kalau Bulan Bisa Ngomong, Aku Cinta Kamu dan Rindu Aku Rindu Kamu serta duetnya dengan Ikko lewat lagu
+                Cuma Kamu.</p>
+        </div>
+    </div>
+
+    <div id="modalSri" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Sri Baduga Maharaja</h2>
+            <center><img src="../assets/images/tokoh/sri.jpg"></center>
+            <p>Sri Baduga Maharaja atau Prabu Siliwangi (Sunda: ᮞᮢᮤ ᮘᮓᮥᮌ ᮙᮠᮛᮏ atau ᮕᮢᮘᮥ ᮞᮤᮜᮤᮝᮍᮤ) (Ratu Jayadewata)
+                putra Prabu Dewa Niskala putra Mahaprabu Niskala Wastu Kancana lahir 1401 M di Kawali Ciamis, mengawali
+                pemerintahan zaman Pakuan Pajajaran Pasundan, yang memerintah Kerajaan Sunda Galuh selama 39 tahun
+                (1482-1521). Pada masa inilah Pakuan Pajajaran di Bogor mencapai puncak perkembangannya.</p>
+        </div>
+    </div>
+
+    <div id="modalOto" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Oto Iskandar di Nata</h2>
+            <center><img src="../assets/images/tokoh/oto.jpg"></center>
+            <p>Raden Otto Iskandardinata (Sunda: ᮛ᮪ᮓ᮪. ᮇᮒ᮪ᮒᮧ ᮄᮞ᮪ᮊᮔ᮪ᮓᮁᮓᮤᮔᮒ, Latin: Rd. Otto Iskandardinata; lahir di
+                Bandung, Jawa Barat, 31 Maret 1897 – meninggal di Mauk, Tangerang, Banten, 20 Desember 1945 pada umur
+                48 tahun) adalah salah satu Pahlawan Nasional Indonesia. Ia mendapat nama julukan si Jalak Harupat.</p>
+        </div>
+    </div>
+
+    <div id="modalMustapa" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>P.H.H.MUSTAPA</h2>
+            <center><img src="../assets/images/tokoh/mustapa.jpg"></center>
+            <p>P. H. H. Mustapa (1852-1930) adalah tokoh sastra Sunda terbesar pada zaman kolonial yang banyak menulis
+                dangding dan wawacan. Sekitar tahun 1900-an, misalnya, P.H.H. Mustapa sempat menulis lebih dari 10.000
+                bait dangding yang kualitas literernya dianggap bermutu tinggi. Selain itu ia pun banyak menulis
+                anekdot dan prosa. Namun kebesarannya baru disebut-sebut pada tahun 1950-an oleh Ajip Rosidi, yang
+                selanjutnya memicu para peneliti untuk mendalaminya. Tahun 1965 P. H. H. Mustapa mendapat penghargaan
+                dari Gubernur Jawa Barat dan pada tahun 1977 Presiden RI memberikan Anugerah Seni kepadanya sebagai
+                sastrawan daerah Sunda.</p>
+        </div>
+    </div>
+
+    <div id="modalMusa" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>MUH.MUSA</h2>
+            <center><img src="../assets/images/tokoh/musa.jpg"></center>
+            <p>Muh. Musa (1822-1886) adalah pelopor sastrawan Sunda pada paruh kedua abad 19. Karya-karyanya dalam
+                bentuk wawacan (11 judul) dan prosa (33 judul), baik asli maupun terjemahan, banyak diterbitkan
+                pemerintah kolonial pada waktu itu. Wawacan Panji Wulung, merupakan salah satu karyanya yang cukup
+                populer di masyarakat Sunda. Berkat jasa dan hubungannya yang baik dengan pemerintah kolonial, Muh.
+                Musa sempat memperoleh medali emas. Muh. Musa pun banyak mengusahakan buku bacaan berbahasa Sunda.
+                Menurut catatan Moriyama (2005), Muh. Musa sedikitnya menerbitkan 14 judul buku yang dicetak pada zaman
+                pemerintah kolonial.</p>
+        </div>
+    </div>
+
+    <div id="modalDK" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>D.K.ARDIWINATA</h2>
+            <center><img src="../assets/images/tokoh/DK.jpg"></center>
+            <p>D.K. Ardiwinata (1866-1947) adalah tokoh sastra Sunda pada zaman Balai Pustaka yang banyak menulis
+                novel. Baruang ka nu Ngarora (1914) adalah novel pertama berbahasa Sunda yang ditulis oleh D.K.
+                Ardiwinata. Selain itu ia pun menulis dongeng dan banyak menyadur karya-karya pengarang dunia.</p>
+        </div>
+    </div>
+
+    <div id="modalYuhana" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>YUHANA</h2>
+            <center><img src="../assets/images/tokoh/yuhana.jpg"></center>
+            <p>Yuhana (nama aslinya Achmad Bassach) adalah pengarang novel Sunda yang karya-karyanya setia diterbitkan
+                oleh penerbit swasta. Tidak tercatat satu pun novelnya yang diterbitkan Balai Pustaka. Novel populernya
+                yang pertama adalah Carios Eulis Acih (1923). Novel tersebut menuai sukses besar pada waktu itu dan
+                sempat dibuat film. Setelah itu keluar novelnya yang lain, seperti Neng Yaya (1923), Agan Permas
+                (1926), dan yang paling terkenal Rasiah nu Goréng Patut (1928) atau lebih dikenal dengan Karnadi Anémer
+                Bangkong karena tokoh utamanya bernama Karnadi.</p>
+        </div>
+    </div>
+
+    <div id="modalSoewanda" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>G.SOEWANDAKOESOEMAH</h2>
+            <center><img src="../assets/images/tokoh/soewanda.jpg"></center>
+            <p>GS bernama lengkap G. Sastradiredja. Namun menurut R. Éro Bratakusumah, GS bernama lengkap G.
+                Soewandakoesoemah. GS adalah pelopor penulisan cerpen berbahasa Sunda. Dogdog Pangréwong (1930) adalah
+                kumpulan cerpennya yang pertama dalam bahasa Sunda dan merupakan kumpulan cerpen yang pertama terbit di
+                Indonesia. Isinya delapan cerpen bernada humor yang dialog antartokohnya terasa hidup.</p>
+        </div>
+    </div>
+
+    <div id="modalTini" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>TINI KARTINI</h2>
+            <center><img src="../assets/images/tokoh/tini.jpg"></center>
+            <p>Tini Kartini dapat disebutkan sebagai pengarang wanita cukup kuat dalam cerpen Sunda. Kumpulan cerpennya
+                yang pertama terbit ialah Jurig!, Paméran, dan Nyi Karsih. Selain itu Tini Kartini banyak melakukan
+                penelitian tentang sastra dan sastrawan Sunda. Meskipun keduanya berbeda zaman, namun dalam hal
+                kepengarangannya, baik GS maupun Tini Kartini termasuk tokoh berpengaruh dalam sastra Sunda, terutama
+                dalam penulisan cerpen.</p>
+        </div>
+    </div>
+
+    <div id="modalKis" class="modalbg">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>KIS WS</h2>
+            <center><img src="../assets/images/tokoh/kis.jpg"></center>
+            <p>Kis Ws (1922-1995) adalah pelopor dan pembaru dalam penulisan sajak Sunda. Kis Ws adalah orang Sunda
+                pertama yang menulis sajak Sunda sekitar tahun 1950-an. Sempat terjadi polemik ketika sajaknya untuk
+                pertama kali dimuat dalam Sk. Sipatahunan, karena pada waktu itu orang Sunda lebih mengenal dangding.
+                Selain menulis sajak, Kis Ws pun banyak menulis cerpen dan esai. </p>
+        </div>
+    </div>
+
+    <div class="preloader">
+        <div class="loading">
+            <img src="../assets/images/load.gif" width="80">
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/mansory.js"></script>
+    <script>
+        (function () {
+            var $grid = $('.grid').imagesLoaded(function () {
+                $('.site__wrapper').masonry({
+                    itemSelector: '.grid'
+                });
+            });
+        })();
+
+        $(document).ready(function () {
+            $(".preloader").delay(500).fadeOut();
+        })
+    </script>
+</body>
+
+</html>
